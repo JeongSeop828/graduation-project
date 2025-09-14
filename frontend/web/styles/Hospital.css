@@ -1,0 +1,72 @@
+/* src/styles/medicine.css */
+.medicine-container {
+  position: relative;
+  padding: 20px;
+}
+
+.medicine-layout {
+  width: 1200px; /* 테이블의 가로 길이를 1200px로 설정 */
+  margin: 0 auto;
+}
+
+.add-medicine-button {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #099924;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-medicine-button:hover {
+  background-color: #007f2d;
+}
+
+.medicine-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header, .table-cell {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-header {
+  background-color: #f4f4f4;
+}
+
+.medicine-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.edit-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}

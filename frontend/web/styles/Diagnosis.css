@@ -1,0 +1,34 @@
+/* 그래프 컨테이너 */
+.diagnosis-chart-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;  /* 화면에 맞춰 자동으로 너비 조정 */
+  max-width: 1000px; /* 최대 너비는 1000px */
+  height: auto;  /* 높이는 자동 조정 */
+  aspect-ratio: 2 / 1; /* 너비 대비 높이 비율 (2:1) */
+  box-sizing: border-box;
+}
+
+/* 진단 데이터 분석 전체 컨테이너 */
+.diagnosis-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* 진단 데이터 분석 제목 */
+.diagnosis-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 차트 제목 스타일 */
+.chart-container h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}

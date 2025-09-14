@@ -1,0 +1,24 @@
+/* src/styles/App.css */
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9 /* 전체 화면을 가득 채우도록 설정 */
+}
+
+.sidebar {
+  width: 250px; /* 사이드바의 너비 */
+  background-color: #f4f4f4;
+  padding: 20px;
+  height: 100vh; /* 사이드바 높이를 화면에 맞추기 */
+}
+
+/* .content {
+  margin-left: 250px; 사이드바 크기만큼 왼쪽 여백 추가 
+  padding: 20px;
+  width: calc(100% - 250px);  화면에서 사이드바를 제외한 너비 
+  display: flex;
+  flex-direction: column;  세로로 정렬 
+  align-items: flex-start;
+  height: 100vh; /* content의 높이를 화면에 맞추기 
+  overflow-y: auto;  세로로 내용이 넘칠 경우 스크롤이 생기도록 
+} */

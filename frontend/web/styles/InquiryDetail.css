@@ -1,0 +1,99 @@
+/* 전체 화면을 감싸는 컨테이너 */
+.inquiry-detail-wrapper {
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100vh; /* 화면의 전체 높이를 차지 */
+  background-color: #f9f9f9; /* 배경색 */
+}
+
+/* 상세 정보 컨테이너 */
+.inquiry-detail-container {
+  padding: 20px;
+  background-color: #ffffff; /* 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  max-width: 700px; /* 최대 너비 설정 */
+  width: 100%; /* 가로 폭을 100%로 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 */
+}
+
+/* 제목 스타일 */
+.inquiry-detail-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* 제목을 중앙 정렬 */
+}
+
+/* 각 항목 스타일 */
+.inquiry-detail-container p {
+  font-size: 16px;
+  color: #555; /* 텍스트 색상 */
+  margin: 10px 0;
+}
+
+/* 입력 필드 스타일 */
+.inquiry-detail-container input,
+.inquiry-detail-container textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 97%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 20px; /* 오른쪽 마진 추가 */
+}
+
+/* textarea 스타일 */
+.inquiry-detail-container textarea {
+  height: 120px;
+ /* 아래쪽 간격 추가 */
+}
+
+/* 입력 필드 포커스 시 스타일 */
+.inquiry-detail-container input:focus,
+.inquiry-detail-container textarea:focus {
+  border-color: #099924;
+}
+
+/* 버튼 스타일 */
+.inquiry-detail-container button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.inquiry-detail-container button[type="button"] {
+  background-color: #099924; /* 저장 버튼 */
+  color: white;
+}
+
+.inquiry-detail-container button[type="button"]:hover {
+  background-color: #087a1f; /* 호버 효과 */
+}
+
+/* 뒤로가기 버튼 */
+.inquiry-detail-container button.back {
+  background-color: #e0e0e0; /* 뒤로가기 버튼 */
+  color: #333;
+}
+
+.inquiry-detail-container button.back:hover {
+  background-color: #bcbcbc; /* 호버 효과 */
+}
+
+/* 폼 항목 스타일 */
+.inquiry-detail-container form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 항목 간 간격 */
+  margin-bottom: 20px; /* 각 항목 간의 하단 여백 */
+}

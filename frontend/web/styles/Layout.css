@@ -1,0 +1,98 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column; /* 사이드바 하단에 로그인 버튼 배치 */
+  border-right: 2px solid #ddd;
+  z-index: 10;
+}
+
+.sidebar-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd; /* 제목 아래 가로선 추가 */
+}
+
+.sidebar-header h2 {
+  font-size: 22px;
+  color: #099924;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* 메인 항목들이 사이드바의 대부분을 차지하게 함 */
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px; /* 호버 시 부드러운 효과 */
+}
+
+.sidebar li:hover {
+  background-color: #e0f4e0; /* 호버 시 배경색 변경 */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a:hover svg {
+  color: white;
+}
+
+.sidebar li.active {
+  background-color: #CCCCCC; /* 클릭 시 눌린 효과 */
+  color: white;
+}
+
+/* 로그아웃 항목 스타일 */
+.logout-item {
+  margin-top: auto; /* 로그아웃 항목을 하단에 배치 */
+  padding: 15px 20px; /* 다른 항목과 동일한 패딩 */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.logout-item:hover {
+  background-color: #e0f4e0;
+}
+
+.logout-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+  align-items: flex-start;
+  min-height: 100vh;         /* min-height로만 설정 */
+  overflow-y: auto;          /* 내용이 넘치면 스크롤 */
+  overflow-x: hidden;        /* 수평 스크롤은 방지 */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}

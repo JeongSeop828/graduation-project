@@ -1,0 +1,70 @@
+/* 대시보드 스타일 */
+.dashboard {
+  padding: 30px;
+  background-color: #f9f9f9;  /* 배경색을 부드러운 그레이로 변경 */
+  border-radius: 8px;
+  height: 100%;
+}
+
+/* 대시보드 제목 */
+.dashboard-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;  /* 간격을 좀 더 여유롭게 */
+  text-align: left;  /* 제목을 왼쪽으로 정렬 */
+}
+
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;  /* 세로로 배치 */
+  gap: 20px;  /* 요소 간 간격 */
+}
+
+/* 통계 항목들 */
+.stats {
+  display: flex;
+  flex-direction: row;  /* 가로로 배치 */
+  gap: 20px;  /* 항목들 간 간격 */
+  margin-bottom: 30px;  /* 차트와의 간격 */
+}
+
+.stat-item {
+  background-color: #ffffff;
+  border-radius: 8px;  /* 모서리를 더 부드럽게 */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;  /* 고정된 너비 */
+}
+
+.stat-item h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 30px;  /* 숫자의 크기를 제목보다 더 크게 설정 */
+  font-weight: bold;
+  color: #099924;  /* 강조 색상으로 변경 */
+}
+
+
+/* 그래프 컨테이너 */
+.chart-container {
+  text-align: center;
+  background-color: #ffffff;  /* 그래프 배경을 흰색으로 */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 1060px;  /* 화면의 너비에 맞춰짐 */
+  height: 500px;  /* 고정된 크기 */
+  box-sizing: border-box;  /* padding을 크기에 포함 */
+}
+
+.chart-container h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;  /* 그래프 제목과 간격 추가 */
+}
