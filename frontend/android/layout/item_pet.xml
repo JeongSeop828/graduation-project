@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="11"
+    android:rowCount="3"
+    android:layout_margin="10dp"
+    android:background="@drawable/block_background">
+
+ <TextView
+     android:id="@+id/tvId"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_rowWeight="1"
+     android:layout_columnWeight="1"
+     android:layout_rowSpan="3"
+     android:gravity="center"
+     android:text="1"
+     android:textSize="18sp"
+     android:textStyle="bold" />
+
+ <View
+     android:layout_width="2dp"
+     android:layout_height="100dp"
+     android:layout_rowSpan="3"
+     android:background="#099924" />
+
+   <ImageView
+       android:id="@+id/imgPet"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_rowSpan="3"
+       android:layout_columnWeight="1"
+       android:layout_rowWeight="1"
+       android:layout_gravity="center"
+       android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="100dp"
+        android:layout_rowSpan="3"
+        android:background="#099924" />
+
+    <TextView
+        android:id="@+id/tvPetName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="이름"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="100dp"
+        android:layout_rowSpan="3"
+        android:background="#099924" />
+
+    <TextView
+        android:id="@+id/tvPetSpecies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="종류"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="100dp"
+        android:layout_rowSpan="3"
+        android:background="#099924" />
+
+    <TextView
+        android:id="@+id/tvPetAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="나이"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="100dp"
+        android:layout_rowSpan="3"
+        android:background="#099924" />
+
+    <TextView
+        android:id="@+id/tvPetGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="성별"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#CCCCCC" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#CCCCCC" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#CCCCCC" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#CCCCCC" />
+
+
+    <TextView
+        android:id="@+id/tvPetNameValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="이름"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tvPetSpeciesValue"
+        android:src="@drawable/clean_dog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/tvPetAgeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="3살"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tvPetGenderValue"
+        android:src="@drawable/male"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center" />
+
+</GridLayout>

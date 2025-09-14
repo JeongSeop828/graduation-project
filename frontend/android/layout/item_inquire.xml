@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:columnCount="5"
+     android:rowCount="3"
+     android:layout_margin="10dp"
+     android:background="@drawable/block_background">
+
+  <TextView
+      android:id="@+id/tvId"
+      android:layout_width="40dp"
+      android:layout_height="wrap_content"
+      android:layout_rowWeight="1"
+      android:layout_rowSpan="3"
+      android:gravity="center"
+      android:text="1"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+  <View
+      android:layout_width="2dp"
+      android:layout_height="0dp"
+      android:layout_rowSpan="3"
+      android:layout_rowWeight="1"
+      android:background="#099924" />
+
+  <TextView
+   android:layout_width="0dp"
+   android:layout_height="wrap_content"
+   android:layout_columnWeight="3"
+      android:layout_marginBottom="4dp"
+   android:text="제목"
+   android:textSize="18dp"
+   android:textStyle="bold"
+   android:gravity="center" />
+
+  <View
+      android:layout_width="2dp"
+      android:layout_height="0dp"
+      android:layout_rowWeight="1"
+      android:layout_rowSpan="3"
+      android:background="#099924" />
+
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_columnWeight="1"
+      android:layout_marginBottom="4dp"
+      android:text="답변여부"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      android:gravity="center" />
+
+  <View
+   android:layout_width="0dp"
+   android:layout_height="2dp"
+   android:layout_columnWeight="3"
+   android:layout_marginLeft="4dp"
+   android:layout_marginRight="4dp"
+   android:background="#CCCCCC" />
+
+  <View
+      android:layout_width="0dp"
+      android:layout_height="2dp"
+      android:layout_columnWeight="1"
+      android:layout_marginLeft="4dp"
+      android:background="#CCCCCC" />
+
+  <TextView
+      android:id="@+id/tvInquiryTitle"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_columnWeight="3"
+      android:layout_rowWeight="1"
+      android:layout_marginRight="4dp"
+      android:layout_marginLeft="4dp"
+      android:layout_marginTop="4dp"
+      android:text="강아지 이미지가 안바껴요"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      android:gravity="center" />
+
+  <TextView
+      android:id="@+id/tvStatus"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_columnWeight="1"
+      android:layout_rowWeight="1"
+      android:layout_marginTop="4dp"
+      android:text="대기중"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      android:gravity="center" />
+ </GridLayout>

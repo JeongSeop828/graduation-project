@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/hospitalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한울동물병원"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingEnd="4dp"
+            android:textColor="#333333"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/hospitalAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서울특별시 송파구 올림픽로 240 (잠실동)"
+            android:layout_gravity="center"
+            android:paddingStart="4dp"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+</LinearLayout>

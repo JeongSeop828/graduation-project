@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imgPet"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/white_logo"
+    android:background="@drawable/image_radius360"
+    android:clipToOutline="true"
+    android:scaleType="centerCrop"
+    android:layout_marginRight="10dp"/>

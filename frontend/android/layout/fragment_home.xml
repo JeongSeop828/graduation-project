@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.HomeFragment"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/background_white_round">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내 반려동물"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- 반려동물이 없을 때 표시될 문구와 버튼 -->
+        <LinearLayout
+            android:id="@+id/linearLayoutNoPets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="16dp">
+
+            <android.widget.Button
+                android:id="@+id/buttonAddPet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_btn"
+                android:text="반려동물을 등록해주세요!"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- RecyclerView (반려동물 리스트) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+
+    <!-- AI 진단 영역: 남은 공간을 꽉 채우도록 설정 -->
+    <LinearLayout
+        android:id="@+id/linearLayoutAiDiagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/background_white_round"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI 진단"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:text="\nAI를 이용해서 반려동물의\n피부건강을 체크하세요"
+            android:drawableRight="@drawable/text_drawable_resize" />
+
+    </LinearLayout>
+</LinearLayout>
